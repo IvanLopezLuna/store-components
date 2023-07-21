@@ -255,6 +255,7 @@ const SKUSelectorContainer: FC<Props> = ({
     phone: 1,
   },
 }) => {
+  console.log(`%c => variations`, 'color: DarkTurquoise', variations)
   const productContext = useProduct()
   const selectedItem = productContext?.selectedItem
 

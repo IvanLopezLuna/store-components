@@ -104,6 +104,7 @@ const useVariations = ({
   shouldNotShow: boolean
   visibleVariations?: string[]
 }) => {
+  console.log(`%c skuItems`, 'color: DarkTurquoise', skuItems)
   const isSkuSpecificationsEmpty = skuSpecifications.length === 0
   /* if the skuSpecifications array has values, then it should be used to find
    * the variations, which will come ordered the same way they are in the catalog */
@@ -213,6 +214,7 @@ function SKUSelectorWrapper(props: Props) {
     shouldNotShow,
     visibleVariations: props.visibleVariations,
   })
+  console.log(`%c variations`, 'color: DarkTurquoise', variations)
 
   useEffect(() => {
     if (dispatch) {

@@ -361,9 +361,7 @@ function SKUSelector({
     ]
   )
 
-  const [displayVariations, setDisplayVariations] = useState<
-    DisplayVariation[]
-  >(() => getAvailableVariations(availableVariationsPayload))
+  const [displayVariations, setDisplayVariations] = useState<DisplayVariation[]>(() => getAvailableVariations(availableVariationsPayload))
 
   useEffectSkipMount(() => {
     let isCurrent = true

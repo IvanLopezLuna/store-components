@@ -82,6 +82,7 @@ const Variation: FC<Props> = ({
   const shouldCollapse = !showAll && options.length > maxItems
 
   const overflowQuantity = options.length - visibleItemsWhenCollapsed
+
   const displayOptions = options.slice(
     0,
     shouldCollapse ? visibleItemsWhenCollapsed : options.length
